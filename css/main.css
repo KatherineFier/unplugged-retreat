@@ -101,6 +101,23 @@ textarea {
  /* -------------------- Base Header - Footer Styles -------------------- */
 
 
+ .content-wrapper {
+
+  width: 90%;
+
+  padding: 0px 20px 0px 20px;
+
+  justify-content: center;
+
+
+}
+
+.header-divider {
+
+  width: 100%;
+
+}
+
 
 header, footer{  
 
@@ -114,6 +131,13 @@ header, footer{
 
 }
 
+header {
+
+padding: 15px 0px 15px 0px;
+
+}
+
+
 
 header .content-wrapper {
 
@@ -123,18 +147,26 @@ header .content-wrapper {
 
   align-items: center;
 
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
 
+  width: 60%;
 
+  margin: 0;
 
 }
+
+
 
 
 header nav {
 
-  flex-flow:row-wrap;
+  width: 60%;
+
+  display: flex;
 
 }
+
+
 
 
 nav ul {
@@ -144,6 +176,91 @@ nav ul {
   justify-content: space-around;
 
   align-items: center;
+
+  width: 44%;
+
+
+}
+
+
+nav ul li {
+
+
+display: inline-block;
+
+
+}
+
+
+nav ul li a {
+
+  text-decoration: none;
+}
+
+
+.features article {
+
+  width: 55%;
+
+}
+
+
+
+.reviews {
+
+  padding top: 0px;
+
+  padding bottom: 0px;
+
+
+}
+
+
+.reviews h3 {
+
+  width: 45%;
+
+}
+
+
+
+
+
+}
+
+
+footer {
+
+  padding: 50px 0px 10px;
+
+}
+
+
+footer .content-wrapper {
+
+  display: flex;
+
+  justify-content: center;
+
+  width: 55%;
+
+
+}
+
+
+footer p {
+
+  margin: 0;
+
+
+}
+
+
+.social h3 {
+
+display: flex;
+
+justify-content: center;
 
 }
 
@@ -156,15 +273,51 @@ nav ul {
 
 }
 
+
+
+
 .social-icons {
 
   display:flex;
 
-  justify-content: space-around;
+  justify-content: space-around; 
+
+  padding: 0px 0px 30px;
 
 
 }
 
+
+.contact h3{
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 15px;
+
+
+}
+
+
+.contact p{
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 0px 0px 50px;
+
+  text-align: center;
+
+}
+
+
+footer p {
+
+margin: 0;
+
+}
 
 
  /* -------------------- Homepage Styles -------------------- */
@@ -180,25 +333,65 @@ nav ul {
  }
 
 
+ .hero-area h1 {
+
+  display: flex;
+
+  justify-content: center;
+
+ }
+
+
 
  aside {
 
   display: flex;
 
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
+
+  justify-content: center;
 
  }
+
+ aside .newsletter {
+
+   padding: 30px 0px 0px 0px;
+
+
+ }
+
+
+ .form {
+
+  padding: 0px;
+
+ }
+
 
 
  .features {
 
-  display-flex;
+  display: flex;
+
+  padding: 50px;
 
 
  }
 
 
- .features .features-items {
+.features h2 {
+
+  display: flex;
+
+  text-transform: left;
+
+
+
+
+}
+
+
+.feature-items {
 
   display: flex;
 
@@ -206,10 +399,22 @@ nav ul {
 
   align-items: center;
 
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
 
+  padding: 0px;
+
+  text-align: center;
 
  }
+
+
+
+.features article {
+
+  width: 55%;
+
+}
+
 
 
  .reviews {
@@ -218,6 +423,13 @@ nav ul {
 
   flex-flow: row-wrap;
   
+ }
+
+
+ .reviews h3 {
+
+  width: 81%;
+
 
  }
 
@@ -369,16 +581,21 @@ nav ul {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px)
+
+{ /*Tablet styles here*/
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+@media only screen and (min-width: 1200px)
+
+{ /*Desktop styles here*/
+
 }
+
+
+
 
 /* ==========================================================================
    Print styles.
