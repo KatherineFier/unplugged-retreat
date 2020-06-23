@@ -98,7 +98,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
- /* -------------------- Base Header - Footer Styles -------------------- */
+ /* -------------------- Base - Header - Footer - Styles -------------------- */
 
 
  .content-wrapper {
@@ -110,16 +110,17 @@ textarea {
   justify-content: center;
 
 
-}
+  }
+
 
 .header-divider {
 
   width: 100%;
 
-}
+  }
 
 
-header, footer{  
+header, footer {  
 
 	display: flex;
 
@@ -130,6 +131,8 @@ header, footer{
   flex-flow: row-wrap;
 
 }
+
+
 
 header {
 
@@ -173,7 +176,7 @@ nav ul {
 
   display: flex;
 
-  justify-content: space-around;
+  justify-content: space-between;
 
   align-items: center;
 
@@ -186,7 +189,8 @@ nav ul {
 nav ul li {
 
 
-display: inline-block;
+  display: flex;
+
 
 
 }
@@ -194,34 +198,12 @@ display: inline-block;
 
 nav ul li a {
 
+  display: flex;
+
+  justify-content: space-between;
+
   text-decoration: none;
 }
-
-
-.features article {
-
-  width: 55%;
-
-}
-
-
-
-.reviews {
-
-  padding top: 0px;
-
-  padding bottom: 0px;
-
-
-}
-
-
-.reviews h3 {
-
-  width: 45%;
-
-}
-
 
 
 
@@ -258,9 +240,9 @@ footer p {
 
 .social h3 {
 
-display: flex;
+  display: flex;
 
-justify-content: center;
+  justify-content: center;
 
 }
 
@@ -278,7 +260,7 @@ justify-content: center;
 
 .social-icons {
 
-  display:flex;
+  display: flex;
 
   justify-content: space-around; 
 
@@ -313,9 +295,9 @@ justify-content: center;
 }
 
 
-footer p {
+ footer p {
 
-margin: 0;
+  margin: 0;
 
 }
 
@@ -327,7 +309,6 @@ margin: 0;
  .hero-area {
 
   display: flex;
-
   flex-flow: row-wrap;
 
  }
@@ -336,8 +317,8 @@ margin: 0;
  .hero-area h1 {
 
   display: flex;
-
   justify-content: center;
+  text-align: left;
 
  }
 
@@ -346,16 +327,15 @@ margin: 0;
  aside {
 
   display: flex;
-
   flex-flow: row wrap;
-
   justify-content: center;
 
  }
 
+
  aside .newsletter {
 
-   padding: 30px 0px 0px 0px;
+   padding: 30px 0px 30px 0px;
 
 
  }
@@ -372,7 +352,6 @@ margin: 0;
  .features {
 
   display: flex;
-
   padding: 50px;
 
 
@@ -382,10 +361,7 @@ margin: 0;
 .features h2 {
 
   display: flex;
-
   text-transform: left;
-
-
 
 
 }
@@ -394,11 +370,8 @@ margin: 0;
 .feature-items {
 
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   flex-flow: row wrap;
 
   padding: 0px;
@@ -417,21 +390,24 @@ margin: 0;
 
 
 
+.reviews h3 {
+
+  width: 45%;
+
+}
+
+
+
  .reviews {
 
   display: flex;
-
   flex-flow: row-wrap;
+
+  padding top: 0px;
+  padding bottom: 0px;
   
  }
 
-
- .reviews h3 {
-
-  width: 81%;
-
-
- }
 
 
 
@@ -441,7 +417,6 @@ margin: 0;
 .mission {
 
   display: flex;
-
   flex-flow: row-wrap;
 
 }
@@ -450,7 +425,6 @@ margin: 0;
 .contact-section {
 
   display: flex;
-
   flex-flow: row-wrap;
 
 
@@ -464,31 +438,21 @@ margin: 0;
   .faq {
 
     display: flex;
-
     flex-flow: row-wrap;
 
 
   }
-
 
 
 
   .faq .content-wrapper {
 
     display: flex;
-
     align-items: center;
-
     flex-flow: row-wrap;
 
 
   }
-
-
-
-
-
-
 
 
 
@@ -585,7 +549,165 @@ margin: 0;
 
 { /*Tablet styles here*/
 
+
+  /* HOMEPAGE Tablet styles here */
+
+
+  /* General styles */
+
+  .content-wrapper {
+
+    max-width: 640px;
+    margin: 100px 0;
+
+  }
+
+  /* Header */
+
+
+  header {
+
+    justify-content: center;
+
+  }
+
+
+  header .content-wrapper {
+
+      width: 85%;
+      justify-content: center;
+
+  }
+
+
+  header nav {
+
+      width: 17%;
+
+
+  }
+
+  header nav ul {
+
+      justify-content: space-between;
+
+  }
+
+
+  .header-divider {
+    display: none;
+
+
+  }
+
+
+   /* Hero Area */
+ 
+
+
+
+
+  /* Aside */
+
+    aside .newsletter .content-wrapper {
+
+        margin: 50px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap; 
+
+  }
+
+
+
+    aside .newsletter .content-wrapper .form-description, aside .newsletter .content-wrapper .form {
+
+      width: 40%;
+      margin: 0;
+
+  }
+
+
+
+    .features article {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      flex-basis: 27%;
+
 }
+
+
+  .features .features-item-description {
+
+  width: 27%;
+
+}
+
+
+/* Reviews */
+
+
+.reviews article {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+.reviews article div {
+    width: 44%;
+
+
+}
+
+
+/* Footer */
+
+
+footer .content-wrapper {
+
+  width: 69%;
+  margin: 100px 0;
+
+
+}
+
+
+ .footer-content {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+footer .contact {
+
+  margin-bottom: 0;
+
+}
+
+
+
+
+footer .copyright {
+
+  width: 27%;
+
+}
+
+}
+
 
 
 @media only screen and (min-width: 1200px)
