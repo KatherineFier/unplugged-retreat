@@ -104,202 +104,95 @@ textarea {
  .content-wrapper {
 
   width: 90%;
-
-  padding: 0px 20px 0px 20px;
-
-  justify-content: center;
-
-
+  padding: 50px 0;
   }
 
 
-.header-divider {
 
-  width: 100%;
-
-  }
-
-
-header, footer {  
+header {  
 
 	display: flex;
-
   justify-content: center;
-
   align-items: center;
-
-  flex-flow: row-wrap;
-
-}
-
-
-
-header {
-
-padding: 15px 0px 15px 0px;
+  flex-flow: row wrap;
+  padding: 15px 0;
 
 }
 
 
 
 header .content-wrapper {
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   flex-flow: row wrap;
-
-  width: 60%;
-
   margin: 0;
-
 }
 
 
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  }
 
 
 header nav {
-
-  width: 60%;
-
   display: flex;
-
-}
-
-
-
-
-nav ul {
-
-  display: flex;
-
-  justify-content: space-between;
-
+  justify-content: space-around;
   align-items: center;
-
-  width: 44%;
-
-
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 
-nav ul li {
-
-
+header nav ul {
   display: flex;
-
-
-
+  justify-content: space-around;
+  width: 100%;
 }
 
-
-nav ul li a {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  text-decoration: none;
-}
-
-
-
-
-}
 
 
 footer {
-
-  padding: 50px 0px 10px;
-
-}
-
-
-footer .content-wrapper {
-
-  display: flex;
-
-  justify-content: center;
-
-  width: 55%;
-
-
+  flex-direction: column;
 }
 
 
 footer p {
-
   margin: 0;
-
-
 }
 
 
-.social h3 {
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
 
-  display: flex;
-
-  justify-content: center;
-
+footer .contact {
+  margin-bottom: 50px;
 }
 
 
-
-.footer-social {
-
+footer .social-icons {
   display: flex;
-
-
-}
-
-
-
-
-.social-icons {
-
-  display: flex;
-
   justify-content: space-around; 
-
-  padding: 0px 0px 30px;
-
-
+  align-items: center;
 }
 
 
-.contact h3{
-
+footer .social-icons p {
   display: flex;
-
   justify-content: center;
-
-  padding: 15px;
-
-
+  align-items: center;
 }
 
 
-.contact p{
-
-  display: flex;
-
-  justify-content: center;
-
-  padding: 0px 0px 50px;
-
-  text-align: center;
-
+footer .copyright {
+  margin: 20px 0;
 }
 
-
- footer p {
-
-  margin: 0;
-
-}
 
 
  /* -------------------- Homepage Styles -------------------- */
@@ -307,127 +200,80 @@ footer p {
 
 
  .hero-area {
-
-  display: flex;
-  flex-flow: row-wrap;
-
- }
-
-
- .hero-area h1 {
-
   display: flex;
   justify-content: center;
-  text-align: left;
-
+  flex-flow: row-wrap;
  }
-
 
 
  aside {
-
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
-
- }
-
-
- aside .newsletter {
-
-   padding: 30px 0px 30px 0px;
-
-
- }
-
-
- .form {
-
-  padding: 0px;
-
+  align-items: center;
+  flex-flow: row wrap;
  }
 
 
 
  .features {
-
   display: flex;
-  padding: 50px;
-
-
+  justify-content: center;
+  flex-flow: row wrap;
  }
 
 
 .features h2 {
-
-  display: flex;
-  text-transform: left;
-
-
+  margin-bottom: 60px;
 }
 
 
-.feature-items {
+.features article {
+  width: 63%;
+}
 
+.features .feature-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
   padding: 0px;
-
-  text-align: center;
-
  }
 
-
-
-.features article {
-
-  width: 55%;
-
-}
-
-
-
-.reviews h3 {
-
-  width: 45%;
-
-}
 
 
 
  .reviews {
-
   display: flex;
+  justify-content: center;
   flex-flow: row-wrap;
-
-  padding top: 0px;
-  padding bottom: 0px;
-  
  }
 
 
+ .reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+}
 
 
  /* -------------------- About page Styles -------------------- */
 
 
 .mission {
-
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row-wrap;
-
 }
 
 
 .contact-section {
-
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row-wrap;
-
-
 }
 
 
@@ -436,24 +282,31 @@ footer p {
 
 
   .faq {
-
     display: flex;
-    flex-flow: row-wrap;
-
-
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
 
 
   .faq .content-wrapper {
-
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-flow: row-wrap;
+    flex-flow: row wrap;
 
-
+    margin: 50px 0 0 0;
   }
 
+  .faq h2{
+    margin-bottom: 40px;
+  }
+
+
+  .faq-content {
+    margin-bottom: 50px;
+  }
 
 
 /* ==========================================================================
@@ -550,79 +403,97 @@ footer p {
 { /*Tablet styles here*/
 
 
-  /* HOMEPAGE Tablet styles here */
 
+  /* ==========================================================================
+   General + Header & Footer Styles
+   ========================================================================== */
 
-  /* General styles */
+/* General styles */
 
   .content-wrapper {
-
     max-width: 640px;
     margin: 100px 0;
-
   }
 
   /* Header */
 
-
   header {
-
-    justify-content: center;
-
+    justify-content: space-around;
+    padding: 33px 0;
   }
 
 
   header .content-wrapper {
-
-      width: 85%;
-      justify-content: center;
-
+      width: 100%;
+      justify-content:space-between;
   }
 
 
   header nav {
-
-      width: 17%;
-
-
+      width: 20%;
   }
 
   header nav ul {
-
       justify-content: space-between;
-
   }
 
 
   .header-divider {
     display: none;
-
-
   }
+
+/* Footer */
+
+footer .content-wrapper {
+  width:65%;
+  margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+
+footer .copyright {
+  width: 100%;
+}
+
+
+
+/* ==========================================================================
+   Homepage Page
+   ========================================================================== */
+
+
+  
 
 
    /* Hero Area */
  
-
-
-
-
   /* Aside */
 
-    aside .newsletter .content-wrapper {
+    aside .content-wrapper {
 
         margin: 50px 0;
 
+        padding: 0px;
+
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         flex-flow: row wrap; 
 
   }
 
 
 
-    aside .newsletter .content-wrapper .form-description, aside .newsletter .content-wrapper .form {
+    aside .content-wrapper .form-description, aside .content-wrapper .form {
 
       width: 40%;
       margin: 0;
@@ -631,21 +502,19 @@ footer p {
 
 
 
-    .features article {
+ /* Features */
 
+    .features article {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-flow: row wrap;
-      flex-basis: 27%;
-
+      flex-flow: column wrap;
+      flex-basis: 50%;
 }
 
 
-  .features .features-item-description {
-
-  width: 27%;
-
+    .features .features-item-description {
+      width: 50%;
 }
 
 
@@ -653,58 +522,70 @@ footer p {
 
 
 .reviews article {
-
     display: flex;
-    justify-content: center;
-
-
+    justify-content: space-between;
 }
 
 
 
 .reviews article div {
-    width: 44%;
-
-
-}
-
-
-/* Footer */
-
-
-footer .content-wrapper {
-
-  width: 69%;
-  margin: 100px 0;
-
-
-}
-
-
- .footer-content {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-}
-
-
-footer .contact {
-
-  margin-bottom: 0;
-
+    width: 49%;
 }
 
 
 
 
-footer .copyright {
+/* ==========================================================================
+   About Page
+   ========================================================================== */
+ 
 
-  width: 27%;
+   .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding top: 20px;
+    }
+
+ 
+    .mission-content p {
+        width: 45%;
+    }
+ 
+
+    .contact-section .content-wrapper h2 {
+        width: 80%;
+    }
+ 
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+}
+
+
+/* ==========================================================================
+     FAQ Page
+     ========================================================================== */
+  
+  .faq .content-wrapper {
+      justify-content: space-between;
+  }
+
+
+  .faq-content {
+    flex-basis: 45%;
 
 }
+
+  
+  .faq h2 {
+
+    width: 100%;
+
+  }
+
 
 }
 
