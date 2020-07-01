@@ -156,6 +156,10 @@ header nav ul {
 
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -594,6 +598,63 @@ footer .copyright {
 @media only screen and (min-width: 1200px)
 
 { /*Desktop styles here*/
+
+
+
+  /* ==========================================================================
+   General + Header & Footer Styles
+   ========================================================================== */
+
+  /* General styles */
+
+	.content-wrapper {
+		max-width: 960px;
+	}
+
+  /* Footer styles */
+
+  footer .content-wrapper {
+    width: 90%;
+  }
+
+
+  /* ==========================================================================
+   Homepage Styles
+   ========================================================================== */
+
+	aside .content-wrapper .form-description, aside .content-wrapper {
+		width: 33%;
+	}
+
+	.features article {
+		width: 20%;
+	}
+
+
+	.features .features-item-description {
+		width: 30%;
+	} 
+
+
+	.reviews h3{
+		width: 25%;
+	}
+
+  /* ==========================================================================
+   About Page Styles
+   ========================================================================== */
+.mission-content p {
+  width: 48%;
+}
+
+.contact-section .content-wrapper h2 {
+width: 90%;
+}
+
+
+ /* ==========================================================================
+   FAQ Page Styles
+   ========================================================================== */
 
 }
 
