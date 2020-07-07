@@ -174,10 +174,10 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+
 footer .contact {
   margin-bottom: 50px;
 }
-
 
 footer .social-icons {
   display: flex;
@@ -231,9 +231,7 @@ footer .copyright {
 }
 
 
-.features article {
-  width: 63%;
-}
+
 
 .features .feature-items {
   display: flex;
@@ -244,7 +242,9 @@ footer .copyright {
  }
 
 
-
+.features article {
+  width: 63%;
+}
 
  .reviews {
   display: flex;
@@ -475,10 +475,6 @@ footer .copyright {
    Homepage Page
    ========================================================================== */
 
-
-  
-
-
    /* Hero Area */
  
   /* Aside */
@@ -622,34 +618,38 @@ footer .copyright {
    Homepage Styles
    ========================================================================== */
 
-	aside .content-wrapper .form-description, aside .content-wrapper {
-		width: 33%;
+	.hero-area h1{
+		width: 60%;
+	}
+
+
+	aside .content-wrapper{
+		justify-content: space-around;
+
+	}
+
+	aside .content-wrapper .form-description, aside .content-wrapper .form {
+		width: 30%;
 	}
 
 	.features article {
-		width: 20%;
+      flex-basis: 33%;
 	}
 
 
-	.features .features-item-description {
-		width: 30%;
-	} 
-
-
-	.reviews h3{
-		width: 25%;
+	.reviews article div {
+		width:42%;
 	}
 
   /* ==========================================================================
    About Page Styles
    ========================================================================== */
-.mission-content p {
-  width: 48%;
-}
 
-.contact-section .content-wrapper h2 {
-width: 90%;
-}
+
+
+	.mission h2, .contact-section .content-wrapper h2{
+	width: 95%;
+	}
 
 
  /* ==========================================================================
