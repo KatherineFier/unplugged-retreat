@@ -106,14 +106,16 @@ html {
   font-size: 16px;
 	
 }
+
+
  
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  color: #e1e2ea;
-  
+  color: #e1e2ea; 
 }
  
+
 ul, 
 ol {
   font-family:'Open Sans', sans-serif;
@@ -121,84 +123,127 @@ ol {
   font-size: 1.125em;
   list-style-type: none;
   font-weight: 700;
-
- 
 }
+
  
 a {
   color: #e2e3ed;
   text-decoration: none;
-	
 }
+
 
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size:2.25em;
   text-align: left;
   color: #e2e3ed;
-
+  font-weight: 100;
 }
+
  
 h2 { 
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   color: #e2e3ed;
+  font-weight: 400;
 }
- 
-h3, 
-h4 {
+
+
+h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   color: #e2e3ed;
-  font-weight: 500;
- 
+  font-weight:200;
 }
+ 
+ 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  color:#e2e3ed;
+  font-weight:500;
+}
+
  
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: .75em;
-  line-height: 18px;
+  font-size: .8em;
+  line-height: 1.25em;
   color: #e2e3ed;
-	
 }
  
+
+
+
 img {
+
  
 }
+
  
 figure {
  
 }
+
  
 address {
   color: #ffffff;
-
- 
+  font-style: normal;
+  text-align: center;
 }
+
  
 .content-wrapper {
  
 }
 
+
+
  /* -------------------- Base - Header - Footer - Styles -------------------- */
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
  .content-wrapper {
-
   width: 90%;
   padding: 50px 0;
+
   }
 
 
 
 header {  
-
 	display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   padding: 15px 0;
-
+  background-color: #202322;
+  text-transform: uppercase;
 }
 
 
@@ -243,6 +288,8 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  background-color: #202322;
+  padding-bottom: 20px;
 }
 
 
@@ -259,6 +306,12 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
+}
+
+
+
+.social h3{
+  text-align: center;
 }
 
 footer .social-icons {
@@ -297,6 +350,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
  }
 
 
@@ -310,6 +364,7 @@ footer .copyright {
 
 .features h2 {
   margin-bottom: 60px;
+  text-align: left;
 }
 
 
@@ -324,6 +379,11 @@ footer .copyright {
  }
 
 
+.features-item-description {
+  text-align: center;
+ }
+
+
 .features article {
   width: 63%;
 }
@@ -332,6 +392,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row-wrap;
+  background-color: #2a423a;
  }
 
 
@@ -352,7 +413,9 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row-wrap;
+  background-color: #527158;
 }
+
 
 
 .contact-section {
@@ -360,6 +423,13 @@ footer .copyright {
   justify-content: center;
   align-items: center;
   flex-flow: row-wrap;
+  background-color: #2a423a;
+}
+
+
+
+.contact-content {
+  text-align: left;
 }
 
 
@@ -372,6 +442,7 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
   }
 
 
@@ -381,7 +452,6 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
     margin: 50px 0 0 0;
   }
 
@@ -494,6 +564,35 @@ footer .copyright {
    General + Header & Footer Styles
    ========================================================================== */
 
+ul, 
+ol {
+  font-size: 1em; 
+}
+
+
+h1 {
+font-size: 3em;
+line-height: 1.5em;
+}
+
+
+h2{
+font-size: 2.25em;
+line-height: 1.5em;
+}
+
+
+h3{
+font-size: 1.5em;
+line-height: 1.5em;
+}
+
+
+p{
+  line-height: 1.125em;
+}
+
+
 /* General styles */
 
   .content-wrapper {
@@ -595,6 +694,10 @@ footer .copyright {
 }
 
 
+
+   
+
+
     .features .features-item-description {
       width: 50%;
 }
@@ -622,7 +725,7 @@ footer .copyright {
    ========================================================================== */
  
 
-   .mission-content {
+    .mission-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
