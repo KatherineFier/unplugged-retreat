@@ -103,20 +103,16 @@ textarea {
 /* General Styles */
  
 html {
-  font-size: 16px;
-	
+  font-size: 16px;	
 }
 
 img{
   width: 100%;
   }
 
-
 figure{
   margin:0;
 }
-
-
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -453,6 +449,26 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
+
+
+
+.map figure {
+    width: 100%;
+    height: 0; 
+    padding-bottom: 125%; 
+    overflow: hidden;
+    position: relative;
+}
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
+
 
 
 
