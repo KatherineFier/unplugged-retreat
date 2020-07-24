@@ -847,6 +847,14 @@ footer .copyright {
     }
  
 
+
+
+
+
+
+
+
+
     .contact-content {
         display: flex;
         justify-content: space-between;
@@ -989,6 +997,13 @@ footer .copyright {
 	width: 95%;
   font-size: 3em;
 	}
+
+
+.map figure {
+    padding-bottom: 58%; 
+}
+
+
 
   .contact-content h4{
     font-size: 1.875em;
