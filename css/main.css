@@ -494,7 +494,7 @@ input[type=button] {
 
 
   .faq .content-wrapper {
-    margin: 50px 0 0 0;
+    margin: 50px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,13 +502,15 @@ input[type=button] {
   }
 
   .faq h2{
-    margin-bottom: 40px;
+    font-size: 2em;
+    margin: 0 0 30px 0;
     line-height: 1;
+    text-align: left;
   }
 
 
   .faq-content {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .faq h4 {
@@ -620,7 +622,7 @@ input[type=button] {
 /* General styles */
 
 .content-wrapper {
-    max-width: 700px;
+    max-width: 750px;
     margin: 100px 20px 100px 20px;
   }
 
@@ -883,23 +885,29 @@ footer .copyright {
   
   .faq .content-wrapper {
       justify-content: space-between;
+      margin:  80px 0px 40px 0px;
   }
 
 
   .faq-content {
     flex-basis: 45%;
-
 }
 
   
   .faq h2 {
+    margin:  0px 0px 20px 0px;
     width: 100%;
   }
 
 
-  .faq h4, .faq p {
+  .faq h4 {
+  font-size: 1em;
+  }
+
+
+  .faq p {
     font-size: .875em;
-    line-height: 1.125;
+    line-height: 1.25;
   }
 
 
@@ -959,11 +967,11 @@ footer .copyright {
   .hero-area h1{
     font-size: 3.75em;
     width: 80%;
-    margin: -40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
 .hero-area {
-    min-height: 650px;
+    min-height: 750px;
     
     }
 
@@ -1039,9 +1047,13 @@ footer .copyright {
   font-size: 3em;
 }
 
-.faq h4, .faq p {
+.faq h4{
+  font-size: 1.25em;
+}
+
+.faq p {
   font-size: 1.125em;
-  line-height: 1;
+  line-height: 1.25;
 }
 
 }
