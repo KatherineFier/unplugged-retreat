@@ -313,10 +313,11 @@ footer .copyright {
  }
 
  .hero-area h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-family:  'Poppins', Helvetica, Arial, sans-serif;
   font-weight:  500;
   line-height:  1.2;
+  margin: -20px 0px 0px 0px;
  }
 
 
@@ -381,7 +382,7 @@ input[type=button] {
 .features h2 {
   line-height: 1.33;
   margin-bottom: 60px;
-  font-size: 2.25em;
+  font-size: 2.15em;
 
 }
 
@@ -424,7 +425,7 @@ input[type=button] {
  .reviews h2 {
   margin-bottom: 30px;
   line-height: 1.15em;
-  font-size: 2.25em;
+  font-size: 2.15em;
 }
 
 
@@ -862,13 +863,16 @@ footer .copyright {
     }
  
 
-    .contact-section .content-wrapper h2 {
-        width: 80%;
-    }
+    .mission h2, .contact-section h2{
+    font-size:  2.5em;
+    width: 95%;
+    margin-bottom:  25px;
+
+  }
  
 
 
-    .contact-content {
+  .contact-content {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -1029,8 +1033,13 @@ footer .copyright {
 
 
   .mission h2, .contact-section .content-wrapper h2{
-  width: 95%;
+  width: 97%;
   font-size: 3em;
+  }
+
+  .mission h2, .contact-section h2{
+    margin-bottom:  20px;
+
   }
 
   .contact-content h4{
